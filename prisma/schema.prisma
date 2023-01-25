@@ -7,6 +7,7 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
@@ -20,3 +21,66 @@ model Book {
   published Boolean @default(true)
 }
 
+model BookPoduct {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model RelatedBook {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model KidBook {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model BestSeller {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model NewBook {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model GlobalBook {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model ExamBook {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
+
+model GameAndStuff {
+  id    Int      @id @default(autoincrement())
+  title String
+  link1 String?
+  img1  String?
+  price Decimal?
+}
