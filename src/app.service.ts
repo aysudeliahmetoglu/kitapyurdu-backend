@@ -3,6 +3,7 @@ import { Book, PrismaClient, User } from '@prisma/client';
 const prisma = new PrismaClient();
 @Injectable()
 export class AppService {
+  
   async createUser(data): Promise<User> {
     try {
       const newUser = await prisma.user.create({
